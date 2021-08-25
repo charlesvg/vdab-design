@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish-packages": "lerna publish from-packages --yes"
+    "publish-packages": "lerna publish from-package --yes"
   },
   "author": "",
   "license": "ISC",
