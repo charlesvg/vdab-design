@@ -30,7 +30,7 @@ jobs:
         env:
           NPM_REGISTRY_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
       - run: npm ci
-      - run: npm run build
+#      - run: npm run build
       - run: npm publish --access public
       - run: npm config set "//registry.npmjs.org/:_authToken" ""
         if: ${{ always() }}
