@@ -8,3 +8,6 @@
 
 
 # Using Lerna
+- Change some code
+- Commit it (locally)
+- Run `lerna version`
