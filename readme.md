@@ -18,4 +18,4 @@
 - Run 'npm run start' for the mockup you are working on
 
 # TODO
-- Improve/avoid webpack generating an auxiliary asset for the awesome-app.css file
+- Improve/avoid webpack generating an auxiliary asset for the awesome-app.css file (maybe https://stackoverflow.com/questions/34039826/webpack-style-loader-vs-css-loader)

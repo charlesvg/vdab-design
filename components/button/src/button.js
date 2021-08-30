@@ -1,6 +1,6 @@
 import {LitElement, html, css} from 'lit-element';
 import htmlContent from './button.html';
-import cssContent from './button.css';
+import cssContent from './button.scss';
 
 class Button extends LitElement {
     render() {
