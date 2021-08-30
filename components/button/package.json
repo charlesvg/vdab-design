@@ -12,14 +12,15 @@
   "author": "",
   "license": "ISC",
   "files": [
-    "src/button.html",
-    "dist/index.js",
-    "dist/style.css"
+    "button.html",
+    "style.css",
+    "index.js"
   ],
   "dependencies": {
     "lit-element": "^2.5.1"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",

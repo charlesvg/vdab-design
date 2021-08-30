@@ -2,8 +2,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
+const CopyPlugin = require("copy-webpack-plugin");
 
-const litElementBuild = (env, options) => {
+const litElementDevBuild = (env, options) => {
     return {
         mode: options.mode,
         entry: {
@@ -21,6 +22,44 @@ const litElementBuild = (env, options) => {
                 template: 'index.html'
             }),
         ],
+        output: {
+            filename: '[name].js',
+            path: path.resolve(__dirname, 'dist'),
+            clean: false,
+        },
+        module: {
+            rules: [
+                {
+                    test: /\.html$/i,
+                    loader: "html-loader",
+                },
+                {
+                    test: /\.(scss|css)$/,
+                    use: ['css-loader', 'sass-loader'],
+                },
+            ],
+        },
+    };
+}
+
+const litElementProdBuild = (env, options) => {
+    return {
+        mode: options.mode,
+        entry: {
+            index: './src/button.js',
+        },
+        performance: {
+            hints: false,
+        },
+        plugins: [
+            new CopyPlugin({
+                patterns: [
+                    { from: "package.json", to: "." },
+                    { from: "./src/button.html", to: "." },
+                ],
+            }),
+        ],
+        devtool: 'inline-source-map',
         output: {
             filename: '[name].js',
             path: path.resolve(__dirname, 'dist'),
@@ -75,9 +114,11 @@ const staticCSSBuild = (env, options) => {
 }
 const generateBuilds = (env, options) => {
     const builds = [];
-    builds.push(litElementBuild(env, options));
     if (options.mode === 'production') {
+        builds.push(litElementProdBuild(env, options));
         builds.push(staticCSSBuild(env, options));
+    } else {
+        builds.push(litElementDevBuild(env, options));
     }
     return builds;
 }

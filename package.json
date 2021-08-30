@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish-components": "lerna bootstrap && lerna publish from-package --yes --no-verify-access"
+    "publish-components": "lerna bootstrap && lerna publish from-package --yes --no-verify-access --contents dist"
   },
   "author": "",
   "license": "ISC",
