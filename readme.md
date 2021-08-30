@@ -11,3 +11,11 @@
 - Change some code
 - Commit it (locally)
 - Run `lerna version`
+
+# Local development
+- Change some code
+- Run `npm run watch` for each component you are editing
+- Run 'npm run start' for the mockup you are working on
+
+# TODO
+- Improve/avoid webpack generating an auxiliary asset for the awesome-app.css file
