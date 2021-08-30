@@ -4,7 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        app: './src/button.js',
+        index: './src/button.js',
+        style: './src/button.scss'
     },
     devtool: 'inline-source-map',
     devServer: {
@@ -17,7 +18,7 @@ module.exports = {
         }),
     ],
     output: {
-        filename: 'index.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },

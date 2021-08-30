@@ -1,5 +1,6 @@
-$orange: orange;
+@use '../../../styling/colors/colors' as k;
+
 div {
-    background: $orange;
+    background: k.$orange;
     color: black;
 }

@@ -12,9 +12,9 @@
   "author": "",
   "license": "ISC",
   "files": [
-    "src/button.scss",
     "src/button.html",
-    "dist/index.js"
+    "dist/index.js",
+    "dist/button.css"
   ],
   "dependencies": {
     "lit-element": "^2.5.1"
@@ -23,7 +23,7 @@
     "css-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
-    "node-sass": "^6.0.1",
+    "sass": "^1.38.2",
     "sass-loader": "^12.1.0",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
