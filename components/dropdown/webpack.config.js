@@ -8,7 +8,7 @@ const litElementDevBuild = (env, options) => {
     return {
         mode: options.mode,
         entry: {
-            index: './src/button.js',
+            index: './src/dropdown.js',
         },
         performance: {
             hints: false,
@@ -46,7 +46,7 @@ const litElementProdBuild = (env, options) => {
     return {
         mode: options.mode,
         entry: {
-            index: './src/button.js',
+            index: './src/dropdown.js',
         },
         performance: {
             hints: false,
@@ -55,7 +55,7 @@ const litElementProdBuild = (env, options) => {
             new CopyPlugin({
                 patterns: [
                     { from: "package.json", to: "." },
-                    { from: "./src/button.html", to: "." },
+                    { from: "./src/dropdown.html", to: "." },
                 ],
             }),
         ],
@@ -88,7 +88,7 @@ const staticCSSBuild = (env, options) => {
             hints: false,
         },
         entry: {
-            style: './src/button.scss',
+            style: './src/dropdown.scss',
         },
         devtool: 'inline-source-map',
         output: {

@@ -1,8 +1,7 @@
 import {LitElement, html, css} from 'lit-element';
-import htmlContent from './button.html';
-import cssContent from './button.scss';
+import htmlContent from './dropdown.html';
+import cssContent from './dropdown.scss';
 
-import '@vdab/vdab-design-component-button';
 
 class Dropdown extends LitElement {
     render() {
