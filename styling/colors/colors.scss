@@ -1,2 +1,6 @@
-$orange: blue;
+$orange: darken(yellow, 10);
 $blue: blue;
+
+@mixin flexbox {
+  display: flex;
+}

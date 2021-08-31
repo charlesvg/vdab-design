@@ -1,0 +1,7 @@
+@use '../../../styling/colors/colors' as k;
+
+div {
+    background: k.$orange;
+    color: black;
+    @include k.flexbox;
+}
