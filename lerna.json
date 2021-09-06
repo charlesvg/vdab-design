@@ -5,8 +5,5 @@
   ],
   "version": "independent",
   "command": {
-    "version": {
-      "allowBranch": "main"
-    }
   }
 }
