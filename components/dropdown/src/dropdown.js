@@ -13,4 +13,4 @@ class Dropdown extends LitElement {
     }
 }
 
-customElements.define('vdab-dropdown', Dropdown);
+customElements.define('vdab-dropdown-large', Dropdown);

@@ -21,3 +21,4 @@
 - Improve/avoid webpack generating an auxiliary asset for the awesome-app.css file (maybe https://stackoverflow.com/questions/34039826/webpack-style-loader-vs-css-loader)
 - Take a hard look at size optimizations, both for lit & webpack
 - Lerna not detecting a change when `styling/colors/colors.scss` is changed
+

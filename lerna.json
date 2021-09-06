@@ -1,6 +1,12 @@
 {
   "packages": [
-    "components/*", "styling"
+    "components/*",
+    "styling"
   ],
-  "version": "independent"
+  "version": "independent",
+  "command": {
+    "version": {
+      "allowBranch": "main"
+    }
+  }
 }
