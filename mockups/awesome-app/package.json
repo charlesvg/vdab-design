@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vdab/vdab-design-component-button": "../../components/button",
+    "@vdab/vdab-design-component-button": "1.0.12",
     "lit-element": "^2.5.1"
   },
   "devDependencies": {
